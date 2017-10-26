@@ -6,7 +6,4 @@
 
 then git push origin master --force
 
- * sjsjsjsj
-
- 1.1112
- 2.33
+up
