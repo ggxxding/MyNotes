@@ -126,6 +126,8 @@ array([[ 0,  4,  8],
 '''
 u = a[0].transpose()	# 或者u=a[0].T也是获得转置
 
+gg=np.arange(9).reshape((3,3))+1 
+np.linalg.inv(gg)  # 逆矩阵 这里 gg det=0 会报错
 '''
 逆时针旋转90度，第二个参数是旋转次数
 array([[ 3,  2,  1,  0],

@@ -70,4 +70,6 @@ labels = ['{}\n{} km/h'.format(animal, speed) for animal, speed in zip(animals, 
 # 画饼状图，并指定标签和对应颜色
 ax.pie(speeds, labels=labels, colors=colors)
 
+# 图例 ax.plot(lebel='') ax.legend()
+
 plt.show()
