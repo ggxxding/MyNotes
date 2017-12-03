@@ -6,7 +6,6 @@ http://www.cnblogs.com/tornadomeet/archive/2013/03/17/2964515.html
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-
 # Regularized 线性回归练习
 '''
 h(x)=w0+w1*x+w2*x^2+...+w5*x^5
@@ -36,7 +35,7 @@ for i in [0,1,5,10]:	# i=λ
  one=np.linspace(1,1,100).reshape(len(x_in),1)
  X_in=np.hstack((one,one*x_in,one*x_in**2,one*x_in**3,one*x_in**4,one*x_in**5))	#X轴
  Y_pre=np.dot(X_in,w)	#对应Y值
- ax.plot(X_in[:,1],Y_pre,label='lambda={}'.format(i))
+ ax.plot(x_in,Y_pre,label='λ={}'.format(i)) #x_in=X_in[:,1]
 ax.legend() 
 '''
 图例 n1,=ax.plot(x,y,[label='***'])
